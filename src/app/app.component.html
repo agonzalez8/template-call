@@ -1,0 +1,22 @@
+<hello name="{{ name }}"></hello>
+<p>
+	Start editing to see some magic happen. {{counter}}
+</p>
+
+<div *ngFor="let child of children">
+	<app-child-a *ngIf="doNotDoThis()">
+	</app-child-a>
+
+	<app-child-b *ngIf="!doNotDoThis()">
+
+	</app-child-b>
+</div>
+
+<div *ngFor="let child of children2">
+	<app-child-a *ngIf="doNotDoThis()">
+	</app-child-a>
+
+	<app-child-b *ngIf="!doNotDoThis()">
+
+	</app-child-b>
+</div>
